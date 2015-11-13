@@ -120,4 +120,30 @@ function initialize() {
 
     });
 
+
+/*โดมไม้เขตร้อน*/
+    var point4 = new google.maps.LatLng(18.750604, 98.919122);
+    var img4 = 'img/marker/dino-size.png'
+    marker4 = new google.maps.Marker({
+        position: point4,
+        map: map,
+        title: "this is point3",
+        icon: img4
+    });
+
+    marker4.setMap(map);
+
+
+    /*ที่เพิ่ม*/
+    var infoText4 = '<div id="infobody"><b>โดมไม้เขตร้อนชื้น</b>' + '<div>053-114110-5</div>' + '<div><img style="width: 200px" src="img/thumnails/drom.jpg"></div>' + '<div> <a href=http://www.royalparkrajapruek.org/main/place_detail.php?id=148>รายละเอียดเพิ่มเติม</a> </div></div>';
+
+    var infowindow4 = new google.maps.InfoWindow({
+        content: infoText4,
+        maxWidth: 200
+    });
+
+    google.maps.event.addListener(marker4, 'click', function () {
+        infowindow4.open(map, marker4);
+
+    });
 }
