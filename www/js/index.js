@@ -226,4 +226,31 @@ function initialize() {
     });
     
     
+    /*สวนโครงการหลวง*/
+    var point8 = new google.maps.LatLng(18.753374, 98.924272);
+    var img8 = 'img/marker/royal-logo.png';
+    marker8 = new google.maps.Marker({
+        position: point8,
+        map: map,
+        title: "this is point8",
+        icon: img8
+    });
+
+    marker8.setMap(map);
+
+
+    /*ที่เพิ่ม*/
+    var infoText8 = '<div id="infobody"><b>สวนโครงการหลวง</b>' + '<div>053-114110-5</div>' + '<div><img style="width: 200px" src="http://www.thairoyalprojecttour.com/wp-content/uploads/2015/01/RPK-kitchen.png"></div>' + '<div> <a href=http://www.thairoyalprojecttour.com/?p=3642>รายละเอียดเพิ่มเติม</a> </div></div>';
+
+    var infowindow8 = new google.maps.InfoWindow({
+        content: infoText8,
+        maxWidth: 200
+    });
+
+    google.maps.event.addListener(marker8, 'click', function () {
+        infowindow8.open(map, marker8);
+
+    });
+    
+    
 }
