@@ -253,4 +253,80 @@ function initialize() {
     });
     
     
+    /*เรือนร่มไม้*/
+    var point9 = new google.maps.LatLng(18.751489, 98.920814);
+    var img9 = 'img/marker/tree.png';
+    marker9 = new google.maps.Marker({
+        position: point9,
+        map: map,
+        title: "this is point8",
+        icon: img9
+    });
+
+    marker9.setMap(map);
+
+
+    /*ที่เพิ่ม*/
+    var infoText9 = '<div id="infobody"><b>เรือนร่มไม้</b>' + '<div>053-114110-5</div>' + '<div><img style="width: 200px" src="http://www.royalparkrajapruek.org/main/gallery/J020111207212027.jpg"></div>' + '<div> <a href=http://www.royalparkrajapruek.org/main/place_detail.php?id=144>รายละเอียดเพิ่มเติม</a> </div></div>';
+
+    var infowindow9 = new google.maps.InfoWindow({
+        content: infoText9,
+        maxWidth: 200
+    });
+
+    google.maps.event.addListener(marker9, 'click', function () {
+        infowindow9.open(map, marker9);
+    });
+    
+      /*เรือนไทยสี่ภาค*/
+    var point10 = new google.maps.LatLng(18.751653, 98.922127);
+    var img10 = 'img/marker/thai-house.png';
+    marker10 = new google.maps.Marker({
+        position: point10,
+        map: map,
+        title: "this is point10",
+        icon: img10
+    });
+
+    marker10.setMap(map);
+
+
+    /*ที่เพิ่ม*/
+    var infoText10 = '<div id="infobody"><b>เรือนไทยสี่ภาค</b>' + '<div>053-114110-5</div>' + '<div><img style="width: 200px" src="http://www.royalparkrajapruek.org/main/gallery/J120110427151033.jpg"></div>' + '<div> <a href=http://www.royalparkrajapruek.org/main/group4_detail.php?id=17>รายละเอียดเพิ่มเติม</a> </div></div>';
+
+    var infowindow10 = new google.maps.InfoWindow({
+        content: infoText10,
+        maxWidth: 200
+    });
+
+    google.maps.event.addListener(marker10, 'click', function () {
+        infowindow10.open(map, marker9);
+    });
+     
+    /*สวนบัว*/
+    
+    var point11 = new google.maps.LatLng(18.750016, 98.920047);
+    var img11 = 'img/marker/bua-size.png';
+    marker11 = new google.maps.Marker({
+        position: point11,
+        map: map,
+        title: "this is point10",
+        icon: img11
+    });
+
+    marker11.setMap(map);
+
+
+    /*ที่เพิ่ม*/
+    var infoText11 = '<div id="infobody"><b>สวนบัว</b>' + '<div>053-114110-5</div>' + '<div><img style="width: 200px" src="#"></div>' + '<div> <a href=#>รายละเอียดเพิ่มเติม</a> </div></div>';
+
+    var infowindow11 = new google.maps.InfoWindow({
+        content: infoText11,
+        maxWidth: 200
+    });
+
+    google.maps.event.addListener(marker11, 'click', function () {
+        infowindow11.open(map, marker9);
+    });
+    
 }
