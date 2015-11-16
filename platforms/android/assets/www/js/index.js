@@ -121,7 +121,7 @@ function initialize() {
     });
 
 
-/*โดมไม้เขตร้อน*/
+    /*โดมไม้เขตร้อน*/
     var point4 = new google.maps.LatLng(18.750604, 98.919122);
     var img4 = 'img/marker/dino-size.png'
     marker4 = new google.maps.Marker({
@@ -146,4 +146,84 @@ function initialize() {
         infowindow4.open(map, marker4);
 
     });
+    
+    /*ซุ้มผักมหัศจรรย์ */
+    var point5 = new google.maps.LatLng(18.749152, 98.925965);
+    var img5 = 'img/marker/vegetable.png';
+    marker5 = new google.maps.Marker({
+        position: point5,
+        map: map,
+        title: "this is point3",
+        icon: img5
+    });
+
+    marker5.setMap(map);
+
+
+    /*ที่เพิ่ม*/
+    var infoText5 = '<div id="infobody"><b>ซุ้มผักมหัศจรรย์</b>' + '<div>053-114110-5</div>' + '<div><img style="width: 200px" src="http://www.royalparkrajapruek.org/main/gallery/J320131106133803.jpg"></div>' + '<div> <a href=http://www.royalparkrajapruek.org/main/place_detail.php?id=148>รายละเอียดเพิ่มเติม</a> </div></div>';
+
+    var infowindow5 = new google.maps.InfoWindow({
+        content: infoText5,
+        maxWidth: 200
+    });
+
+    google.maps.event.addListener(marker5, 'click', function () {
+        infowindow5.open(map, marker5);
+
+    });
+    
+    /*เรือนกล้วยไม้*/
+    var point6 = new google.maps.LatLng(18.749898, 98.924804);
+    var img6 = 'img/marker/rose-size.png';
+    marker6 = new google.maps.Marker({
+        position: point6,
+        map: map,
+        title: "this is point3",
+        icon: img6
+    });
+
+    marker6.setMap(map);
+
+
+    /*ที่เพิ่ม*/
+    var infoText6 = '<div id="infobody"><b>เรือนกล้วยไม้</b>' + '<div>053-114110-5</div>' + '<div><img style="width: 200px" src="http://www.royalparkrajapruek.org/main/gallery/J020111212144015.jpg"></div>' + '<div> <a href=http://www.royalparkrajapruek.org/main/place_detail.php?id=145>รายละเอียดเพิ่มเติม</a> </div></div>';
+
+    var infowindow6 = new google.maps.InfoWindow({
+        content: infoText6,
+        maxWidth: 200
+    });
+
+    google.maps.event.addListener(marker6, 'click', function () {
+        infowindow6.open(map, marker6);
+
+    });
+    
+    /*อาคารโลกแมลง*/
+    var point7 = new google.maps.LatLng(18.751767, 98.926211);
+    var img7 = 'img/marker/bug.png';
+    marker7 = new google.maps.Marker({
+        position: point7,
+        map: map,
+        title: "this is point7",
+        icon: img7
+    });
+
+    marker7.setMap(map);
+
+
+    /*ที่เพิ่ม*/
+    var infoText7 = '<div id="infobody"><b>อาคารโลกแมลง</b>' + '<div>053-114110-5</div>' + '<div><img style="width: 200px" src="http://www.royalparkrajapruek.org/main/gallery/J020110909192426.jpg"></div>' + '<div> <a href=http://www.royalparkrajapruek.org/main/news_detail.php?id=161>รายละเอียดเพิ่มเติม</a> </div></div>';
+
+    var infowindow7 = new google.maps.InfoWindow({
+        content: infoText7,
+        maxWidth: 200
+    });
+
+    google.maps.event.addListener(marker7, 'click', function () {
+        infowindow7.open(map, marker7);
+
+    });
+    
+    
 }
